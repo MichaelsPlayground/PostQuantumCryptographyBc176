@@ -1,15 +1,15 @@
 # Post Quantum Cryptography with Bouncy Castle
 
-This version uses the final version of Bouncy Castle (1.72) to use most of the PQC finalists and other candidates.
+This version uses the final version of Bouncy Castle (1.76) to use most of the PQC finalists and other candidates.
 
 In your build.gradle file (project) add this line in dependencies section and yes, it is the extended provider  
 to run the NTRU examples:
 
 ```plaintext
-implementation group: 'org.bouncycastle', name: 'bcprov-ext-jdk18on', version: '1.72'
+implementation group: 'org.bouncycastle', name: 'bcprov-ext-jdk18on', version: '1.76'
 ```
 
-Your AndroidManifest.xml needs to appendings for write a file to external storage and send an email:
+Your AndroidManifest.xml needs to appending for write a file to external storage and send an email:
 ```plaintext
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
@@ -55,7 +55,7 @@ NTRULPrime (6 parameter sets)
 SNTRUPrime (6 parameter sets)
 
 Digital Signature Algorithms
-Rainbow (n.a., at the moment this algorithm got updated in Bouncy Castle 1.72)
+Rainbow (6 parameter sets)
 Picnic (12 parameter sets)
 ```
 
@@ -73,7 +73,7 @@ Bouncy Castle release notes: https://github.com/bcgit/bc-java/blob/master/docs/r
 parametersets they may take a long time to finish. Keep in my mind the warning when starting the app:**
 
 **Some algorithms will run several minutes to proceed and can block your complete user interface, so 
-please run the app only when you don\'t need your smartphone for the next minutes.**
+please run the app only when you don't need your smartphone for the next minutes.**
 
 Each algorithm is running the same flow:
 ```plaintext

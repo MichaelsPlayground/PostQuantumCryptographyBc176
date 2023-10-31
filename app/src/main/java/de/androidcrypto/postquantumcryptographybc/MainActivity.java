@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 "round 4 candidates:",
                 "BIKE KEM", "Classic McEliece KEM", "HQC KEM", "SIKE KEM (n.a., broken)",
                 "other candidates:",
-                "NTRU KEM", "FRODO KEM", "SABER KEM", "Rainbow SIG (n.a.)",
+                "NTRU KEM", "FRODO KEM", "SABER KEM", "Rainbow SIG",
                 "NTRULPRime KEM", "SNTRUPRime KEM", "Picnic SIG"};
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
                                 .show();
                         break;
                     }
-                    /* not available as BC version 1.72 is beeing updated at this time
+
                     case "Rainbow SIG": {
                         initBouncyCastle();
                         clearConsole();
@@ -384,7 +384,7 @@ public class MainActivity extends AppCompatActivity {
                                 .show();
                         break;
                     }
-                    */
+
                     case "Picnic SIG": {
                         initBouncyCastle();
                         clearConsole();
